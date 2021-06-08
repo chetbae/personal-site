@@ -73,6 +73,12 @@ const StyledIcon = styled(Icon)`
     background-color: re;
 `;
 
+const StyledLink = styled(typography.LinkBody)`
+    @media ${device.tablet} {
+        margin-right: 5%;
+    }
+`;
+
 export const AboutPage = () => {
     const themeContext:any = useContext(ThemeContext);
     const isDark = themeContext.id === 'dark';
@@ -202,21 +208,21 @@ export const AboutPage = () => {
 
                 <br/>
                 <Row>
-                    <typography.LinkBody href={email} target='_blank' >
+                    <StyledLink href={email} target='_blank' >
                         email
-                    </typography.LinkBody>
-                    <typography.LinkBody href={gitHub} target='_blank' >
+                    </StyledLink>
+                    <StyledLink href={gitHub} target='_blank' >
                         GitHub
-                    </typography.LinkBody>
-                    <typography.LinkBody href={instagram} target='_blank' >
+                    </StyledLink>
+                    <StyledLink href={instagram} target='_blank' >
                         Instagram
-                    </typography.LinkBody>
-                    <typography.LinkBody href={linkedIn} target='_blank' >
+                    </StyledLink>
+                    <StyledLink href={linkedIn} target='_blank' >
                         LinkedIn
-                    </typography.LinkBody>
-                    <typography.LinkBody href={resume} target='_blank' >
+                    </StyledLink>
+                    <StyledLink href={resume} target='_blank' >
                         CV<StyledIcon />
-                    </typography.LinkBody>
+                    </StyledLink>
                 </Row>
                 <br /><br /><br /><br />
             </containers.ContentContainer>

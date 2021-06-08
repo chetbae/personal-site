@@ -8,6 +8,7 @@ const LinkContainer = styled.nav`
     display: flex;
     flex-direction: row;
     padding: 1.2rem 0 0.8rem 0;
+    justify-content: center;
     
     @media ${device.tablet} {
         background-color: transparent;

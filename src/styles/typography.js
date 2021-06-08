@@ -73,11 +73,9 @@ const LinkHeading = styled(NavLink).attrs({ activeClassName })`
     font-size: ${smallText};
     font-family: "Open Sans", sans-serif;
     color: ${({ theme }) => theme.secondary};
-    text-align: right;
     letter-spacing: 0.1rem;
     cursor: pointer;
     text-decoration: none;
-    line-height: 1rem;
     font-weight: 700;
     margin: 0 3%;
     border-bottom: 0.18rem solid ${({ theme }) => theme.primary};
@@ -99,6 +97,8 @@ const LinkHeading = styled(NavLink).attrs({ activeClassName })`
     }
 
     @media ${device.tablet} {
+        line-height: 1rem;
+        text-align: right;
         border-bottom: none;
     }
 `;
@@ -134,11 +134,6 @@ const LinkBody = styled.a`
 
     &:hover {
         border-bottom: 0.2rem solid ${({ theme }) => theme.quaternary};
-    }
-
-    @media ${device.tablet} {
-        margin-right: 5%;
-        
     }
 `;
 
