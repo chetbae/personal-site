@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# my personal website 🐟
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Why 
 
-## Available Scripts
+This has been a long time coming. During the remote-learning year of '20/'21, I began the process of applying to student internships. There I realized that there was a standard practice of a portfolio website amongst applicants, so I erected a makeshift static site to host my CV and projects. Since then I have delved into frontend development more, and with the summer rolling around I have found more time to engineer a better website.
 
-In the project directory, you can run:
+## What
 
-### `yarn start`
+This is a personal website developed with React-Typescript, bootstrapped with create-react-app. Hosted through Heroku with a custom domain from google domains.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I started the design process by drafting purely the aesthetics I desired in viewing the site. <i>(After coding for so long, it was quite an effort to take my mind of 'how' I could implement the look instead of just going for the big picture. Probably useful to apply later on too).</i>
+<br /><br />
 
-### `yarn test`
+<img src="https://user-images.githubusercontent.com/48145854/121237706-322fdf80-c84c-11eb-96fe-ff5756b8ff71.jpg" width="40%" /><img src="https://user-images.githubusercontent.com/48145854/121237678-2cd29500-c84c-11eb-8657-cc287ece4848.jpg" width="38%" />
+<img src="https://user-images.githubusercontent.com/48145854/121237701-30feb280-c84c-11eb-9029-2d24490d8b0b.jpg" width="60%" />
+<br /><br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Then I began implementing the high level structure for the site: site containers, style layouts, components, App-level dark mode (<- really wanted this one), etc... then the smaller details.
 
-### `yarn build`
+Finally, I just entered information of each page of my site as I drafted at the start. Also, I made sure to configure each page for mobile devices. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These steps were re-iterative at times; I've learned a lot for the next time I make a frontend UI or application to streamline the process!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![light mode](https://user-images.githubusercontent.com/48145854/121238859-6a83ed80-c84d-11eb-9383-68cb336e70fe.png)
+![dark mode](https://user-images.githubusercontent.com/48145854/121238902-77a0dc80-c84d-11eb-95a9-558187b8b2a3.png)
+![about](https://user-images.githubusercontent.com/48145854/121238977-8a1b1600-c84d-11eb-8701-2c06023e106f.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/><br/>
+### References
+- [Media queries](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
+- [Heroku custom Google Domain](https://medium.com/@david.gagne/set-up-a-custom-domain-for-your-heroku-application-using-google-domains-guaranteed-a2b2ff934f97)
