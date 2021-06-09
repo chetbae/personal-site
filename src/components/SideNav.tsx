@@ -17,7 +17,7 @@ const LinkContainer = styled.nav`
         flex-direction: column;
         top: 7rem;
         right: 15%;
-        width: 20%;
+        width: 8rem;
         line-height: 1rem;
     }
 `;

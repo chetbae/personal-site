@@ -14,7 +14,7 @@ const email = 'mailto: maxzhangvancouver@gmail.com';
 
 const AboutContainer = styled(containers.PageContainer)`
     @media ${device.tablet} {
-        width: 80%;
+        width: 75%;
         margin: 0% 15% 0% 5%;
     }
 `;

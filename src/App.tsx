@@ -6,7 +6,6 @@ import { ThemeManager } from './functions/themeManager';
 import { containers, light_mode, dark_mode } from './styles';
 import { Toggle } from './components/Toggle';
 
-
 function App() {
   const themeProp = ThemeManager();
   const themeMode = themeProp.theme ? dark_mode : light_mode; 

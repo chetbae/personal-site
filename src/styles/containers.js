@@ -6,7 +6,7 @@ const TopSmall = styled.div`
 `;
 
 const TopMedium = styled.div`
-    padding-top: 2.6rem;
+    padding-top: 4rem;
 `;
 
 const TopLarge = styled.div`
@@ -41,6 +41,7 @@ const PageContainer = styled.div`
         width: 70%;
         margin: 0% 15%;
         flex-direction: row;
+        background-color: re;
     }
 `;
 
@@ -51,11 +52,17 @@ const ContentContainer = styled.div`
 
     @media ${device.tablet} {
         padding-top: 0;
-        width: 85%;
+        width: 90%;
     }
 `;
 
-const ImageContainer = styled.div`
+const Row = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media ${device.tablet} {
+        flex-direction: row;
+    }
 `;
 
 export const containers = {
@@ -65,6 +72,5 @@ export const containers = {
     SiteContainer: SiteContainer,
     PageContainer: PageContainer,
     ContentContainer: ContentContainer,
-    ImageContainer: ImageContainer,
-    // Overlap: Overlap,
+    Row: Row,
 };
