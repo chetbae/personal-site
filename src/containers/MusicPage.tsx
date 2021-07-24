@@ -30,6 +30,7 @@ export const MusicPage = () => {
                         </typography.LargeHeading>
                         <typography.LargeHeading1>
                             TO BE UPDATED...
+                            asdasdasdasdas
                         </typography.LargeHeading1>
 
                         <StyledVideo src={ isDark ? vid2 : vid1 } alt="video" />
