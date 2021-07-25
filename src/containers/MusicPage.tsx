@@ -29,8 +29,10 @@ export const MusicPage = () => {
                             Music 🎺 ; 
                         </typography.LargeHeading>
                         <typography.LargeHeading1>
-                            TO BE UPDATED...
-                            asdasdasdasdas
+                            Biography
+                            Mission Statement
+                            Recordings 
+                            Videos
                         </typography.LargeHeading1>
 
                         <StyledVideo src={ isDark ? vid2 : vid1 } alt="video" />
