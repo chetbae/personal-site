@@ -91,17 +91,20 @@ export const AboutPage = () => {
                     <AboutImage src={ isDark ? darkPhoto : lightPhoto}/>
                     <Body>
                         <AboutHeading>
-                            Hey, here's a bit about myself. <br />
+                            Hi! It's nice to meet you. <br />
                         </AboutHeading>
                         <typography.SmallBody>
-                        I care about the focus and flow programming adds to my life.
+                        I enjoy the flow programming adds to my life. 
+                        Through solving complex problems that each project poses, I find myself eager to learn and rising to the challenge - in doing so, creating order and meaning in my day-today.
                         With the various disciplines I handle, I hope to create tools that inspire and contribute positivity to other lives.
                         <br /><br />
                         I am currently a student at McGill University with a focus in Computer Science and Music Performance.
-                        Before, I was in highschool performing internationally with the award-winning Jazz Band at Semiahmoo Secondary in Surrey, BC.
+                        In the music department, I have had the opportunity to work with, learn from, and perform alongside internationally acclaimed musicians. 
+                        To imagine my life without this medium of music is quite impossible. 
+                        It's been a powerful driving force since my early life, and I'm grateful for it and all the great folks I've met through it. (I play trumpet)
                         <br /><br />
                         My foray with code started with an introductory programming class in university; it's been history ever since.
-                        I'm interested in and studying Software Design, ML, Audio DSP, and overly enthuasiastic about music technology.
+                        I'm looking to gain more experience in the industry and excited to see what a career in software engineering brings! Besides my two main passions, I started rock climbing during the pandemic (it was either that or bread-making) and I'm trying to take to an elite level.
                         <br /><br />
                         I'd love to hear from you! maxzhangvancouver@gmail.com
                         </typography.SmallBody>
@@ -117,8 +120,7 @@ export const AboutPage = () => {
                                 2018-2023<br /> 
                                 <br />
                                 Bachelor of Music<br />
-                                Major in Music Performance<br />
-                                Double Major in Computer Science<br />
+                                Double Major in Computer Science and Music Performance<br />
                                 <br />
                                 Cumulative GPA 3.7 / 4.0<br />
                             </typography.SmallBody>
@@ -127,8 +129,8 @@ export const AboutPage = () => {
                             <AboutHeading>Experience</AboutHeading>
                             <typography.SmallBody>
                                 McGill University<br />
-                                Orchestra Assistant<br />
-                                September 2019 - May 2020<br />
+                                Orchestra Librarian<br />
+                                September 2019 - present<br />
                                 Montréal, QC<br />
                                 <br />
                                 South Delta Jazz Festival<br />
@@ -141,9 +143,16 @@ export const AboutPage = () => {
                                 Summer 2018<br />
                                 Vancouver, BC<br />
                                 <br />
-                                Freelance Musician<br />
-                                Studio / Gig / Lessons<br />
+                                Musician<br />
+                                Studio / Concerts / Lessons<br />
                                 2017 - present<br />
+                                <br />
+                                Attendee and Hacker at:<br />
+                                Hack the North<br />
+                                CodeJam<br />
+                                McHacks 
+
+
 
 
                             </typography.SmallBody>
@@ -154,7 +163,8 @@ export const AboutPage = () => {
                                 Software Design <br />
                                 Algorithms & Data Structures <br />
                                 Frontend Development<br />
-                                Basic Applied ML<br />
+                                Applied Machine Learning<br />
+                                Functional Programming<br />
                                 <br />
                                 Java<br />
                                 Python<br />
@@ -162,7 +172,7 @@ export const AboutPage = () => {
                                 Javascript, Typescript<br />
                                 ReactJS<br />
                                 NodeJS<br />
-                                Git, GitHub, GitLab<br />
+                                Git<br />
                                 <br />
                                 Music Performance<br />
                                 Music Composition<br />

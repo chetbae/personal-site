@@ -62,11 +62,34 @@ export const LandingPage = () => {
 
                             <ListContainer>
                                 <ListItem>
-                                    <typography.Body>studying machine learning at&nbsp;
+                                    <typography.Body>
+                                        seeking spring and summer 2022 software engineering internships
+                                    </typography.Body>
+                                </ListItem>
+                                <ListItem>
+                                    <typography.Body>
+                                        researching&nbsp;
                                         <typography.LinkBody 
-                                            href="https://openlearning.mit.edu/courses-programs/open-learning-library" 
+                                            href="https://github.com/chetbae/machine-learning" 
                                             target='_blank' >
-                                            MIT Open Learning Library
+                                            machine learning
+                                        </typography.LinkBody>
+                                        &nbsp;and&nbsp;
+                                        <typography.LinkBody 
+                                            href="https://github.com/chetbae/programming-languages-and-paradigms" 
+                                            target='_blank' >
+                                            programming languages + paradigms
+                                        </typography.LinkBody>
+                                        &nbsp;at McGill University (Montreal, QC)
+                                    </typography.Body>
+                                </ListItem>
+                                <ListItem>
+                                    <typography.Body>
+                                        obsessed with&nbsp;
+                                        <typography.LinkBody 
+                                            href="https://www.instagram.com/max.sends/" 
+                                            target='_blank' >
+                                            rock climbing! 🧗‍♂️
                                         </typography.LinkBody>
                                     </typography.Body>
                                 </ListItem>
@@ -82,13 +105,7 @@ export const LandingPage = () => {
                             <ListContainer>
                                 <ListItem>
                                     <typography.Body>
-                                        3<sup>rd</sup> year at McGill: algorithm design,&nbsp;
-                                        <typography.LinkBody 
-                                            href="https://github.com/chetbae/interactive-menu-display" 
-                                            target='_blank' >
-                                            software design
-                                        </typography.LinkBody>
-                                       , etc.
+                                        studying music performance + computer science at McGill
                                     </typography.Body>
                                 </ListItem>
                                 <ListItem>
