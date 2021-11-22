@@ -95,7 +95,7 @@ export const AboutPage = () => {
                         </AboutHeading>
                         <typography.SmallBody>
                         I enjoy the flow programming adds to my life. 
-                        Through solving complex problems that each project poses, I find myself eager to learn and rising to the challenge - in doing so, creating order and meaning in my day-today.
+                        Through solving complex problems that each project poses, I find myself eager to learn, and rising to the challenge - in doing so, creating order and meaning in my day-to-day.
                         With the various disciplines I handle, I hope to create tools that inspire and contribute positivity to other lives.
                         <br /><br />
                         I am currently a student at McGill University with a focus in Computer Science and Music Performance.

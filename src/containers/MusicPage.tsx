@@ -28,9 +28,16 @@ const StyledVideo = styled.iframe`
 
 const StyledLabel = styled(typography.Body)`
     font-size: 0.75rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 450;
-    letter-spacing: 0.11rem;
+`
+
+const MusicRow = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+
+    @media ${device.tablet} {
+        flex-direction: row;
+    }
 `
 
 
@@ -51,10 +58,10 @@ export const MusicPage = () => {
                         
 
                         <typography.Body>
-                            {isDark ? 'I really do be paying 20k/year to play a trumpet and write code':'A collection of my musical experiences.' }
+                            {isDark ? 'These are moments of happiness':'A collection of my musical experiences.' }
                         
                         <containers.TopMedium>
-                            <containers.Row>
+                            <MusicRow>
                                 <StyledMedia>
                                     <video height='500px' loop muted autoPlay><source src={isaclip} type='video/mp4'/></video>
                                 </StyledMedia>
@@ -79,28 +86,33 @@ export const MusicPage = () => {
                                         </audio>
                                     </containers.TopMedium> 
                                 </div>
-                            </containers.Row>
+                            </MusicRow>
 
-                            <containers.Row>
+                            <MusicRow>
                             <StyledMedia><StyledVideo src={caity} alt="caity" /></StyledMedia>
                                 October 2021 <br/><br/>
                                 Kensington Market Jazz Festival with the Caity Gyorgy trio ft. Michael Bruzzeze. <br/><br/>
                                 (bass)
-                            </containers.Row>
+                            </MusicRow>
 
-                            <containers.Row>
+                            <MusicRow>
                                 <StyledMedia><StyledVideo src={vid1} alt="jacob" /></StyledMedia>
                                 Feb 2020 <br/><br/>
                                 Recording session with the Jacob Do Sextet. <br/><br/>
                                 (tpt, flug)
-                            </containers.Row>
+                            </MusicRow>
 
-                            <containers.Row>
+                            <MusicRow>
                             <StyledMedia><StyledVideo src={vid2} alt="video" /></StyledMedia>
                                 July 2020 <br/><br/>
                                 Remote recording project with Isabella Rachiele.<br/><br/>
                                 (gtr, tpt, prod)
-                            </containers.Row>
+                            </MusicRow>
+
+                            <typography.SmallBody>
+                                (I love you Laufey)
+
+                            </typography.SmallBody>
 
                             
                         </containers.TopMedium>
