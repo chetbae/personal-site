@@ -84,15 +84,15 @@ export const MusicPage = () => {
                                         <audio controls>
                                             <source src={isa3} type="audio/mp3"/>
                                         </audio>
-                                    </containers.TopMedium> 
-                                </div>
+                                    </containers.TopMedium>
+                                    </div> 
                             </MusicRow>
 
                             <MusicRow>
-                            <StyledMedia><StyledVideo src={caity} alt="caity" /></StyledMedia>
-                                October 2021 <br/><br/>
-                                Kensington Market Jazz Festival with the Caity Gyorgy trio ft. Michael Bruzzeze. <br/><br/>
-                                (bass)
+                                <StyledMedia><StyledVideo src={caity} alt="caity" /></StyledMedia>
+                                    October 2021 <br/><br/>
+                                    Kensington Market Jazz Festival with the Caity Gyorgy trio ft. Michael Bruzzeze. <br/><br/>
+                                    (bass)
                             </MusicRow>
 
                             <MusicRow>
@@ -110,7 +110,7 @@ export const MusicPage = () => {
                             </MusicRow>
 
                             <typography.SmallBody>
-                                (I love you Laufey)
+                                { isDark ? 'I love you Laufey 🤍': ''}
 
                             </typography.SmallBody>
 
