@@ -1,3 +1,4 @@
+<!--
 # my personal website 🐟
 
 ## Why 
@@ -30,3 +31,9 @@ These steps were re-iterative at times; I've learned a lot for the next time I m
 <br/><br/>
 ### References
 - [Media queries](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
+-->
+
+# personal site
+
+<img src="https://i.pinimg.com/originals/eb/1b/27/eb1b27863813653543914d222ceb9cd0.gif"/>
+
