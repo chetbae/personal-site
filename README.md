@@ -1,12 +1,11 @@
 # my personal website 🐟
 
 ## Why 
-
-This has been a long time coming. During the remote-learning year of '20/'21, I began the process of applying to student internships. There I realized that there was a standard practice of a portfolio website amongst applicants, so I erected a makeshift static site to host my CV and projects. Since then I have delved into frontend development more, and with the summer rolling around I have found more time to engineer a better website.
+My first undertaking in using React back in 2020. Since then, I've needed a website to showcase my array of projects and experience as a software developer.
 
 ## What
 
-This is a personal website developed with React-Typescript, bootstrapped with create-react-app. Hosted through Heroku with a custom domain from google domains.
+This is a personal website developed with React-Typescript, bootstrapped with create-react-app. Hosted with vercel with a custom domain from google domains.
 
 ## How
 
@@ -31,4 +30,3 @@ These steps were re-iterative at times; I've learned a lot for the next time I m
 <br/><br/>
 ### References
 - [Media queries](https://jsramblings.com/how-to-use-media-queries-with-styled-components/)
-- [Heroku custom Google Domain](https://medium.com/@david.gagne/set-up-a-custom-domain-for-your-heroku-application-using-google-domains-guaranteed-a2b2ff934f97)
