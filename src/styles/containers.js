@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { device } from '../styles/device';
+import styled from "styled-components";
+import { device } from "../styles/device";
 
 const TopSmall = styled.div`
     padding-top: 1rem;
@@ -22,15 +22,10 @@ const SiteContainer = styled.div`
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background-color: ${( props ) => props.theme.background}; 
-    display: flex;
-    flex-direction: column;
-
-    @media ${device.tablet} {
-    }
+    background-color: ${(props) => props.theme.background};
 `;
 
-// content + sidenav 
+// content + sidenav
 const PageContainer = styled.div`
     margin: 0% 5%;
     display: flex;
@@ -41,7 +36,6 @@ const PageContainer = styled.div`
         width: 70%;
         margin: 0% 15%;
         flex-direction: row;
-        background-color: re;
     }
 `;
 

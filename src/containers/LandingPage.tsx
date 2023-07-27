@@ -1,7 +1,8 @@
-import { useContext } from 'react';
-import styled, { ThemeContext } from 'styled-components';
-import { typography, containers, device } from '../styles';
-import { SideNav } from '../components/SideNav';
+import { useContext } from "react";
+import styled, { ThemeContext } from "styled-components";
+import { typography, containers, device } from "../styles";
+import { SideNav } from "../components/SideNav";
+import resume from "../assets/resume.pdf";
 
 const LandingContainer = styled.div`
     transition: all 0.5s ease;
@@ -24,9 +25,9 @@ const ListContainer = styled.ul`
 const ListItem = styled.li`
     line-height: 1.5rem;
 
-    &::marker{
-        content: '●     ';
-        color: ${( props:any ) => props.theme.primary};
+    &::marker {
+        content: "●     ";
+        color: ${(props: any) => props.theme.primary};
         font-size: 0.8rem;
     }
 `;
@@ -38,105 +39,99 @@ const ImMax = styled(typography.LargeHeading1)`
 `;
 
 export const LandingPage = () => {
-    const themeContext:any = useContext(ThemeContext);
-    const isDark = themeContext.id === 'dark';
+    const themeContext: any = useContext(ThemeContext);
+    const isDark = themeContext.id === "dark";
 
-    return(
+    return (
         <containers.PageContainer>
-            <SideNav />     
+            <SideNav />
             <containers.ContentContainer>
-
                 <LandingContainer>
                     <typography.LargeHeading>
-                        { isDark ? 'Howdy!' : 'Hello,' }<br />
+                        {isDark ? "Howdy!" : "Hello,"}
+                        <br />
                     </typography.LargeHeading>
-                    <ImMax>
-                        I'm Max{ isDark ? ' 🤠' : '' }.
-                    </ImMax>
+                    <ImMax>I'm Max{isDark ? " 🤠" : ""}.</ImMax>
 
                     <BodyContainer>
                         <containers.TopMedium>
                             <typography.Heading>
-                                right now ...
+                                currently ...
                             </typography.Heading>
 
                             <ListContainer>
                                 <ListItem>
                                     <typography.Body>
-                                        seeking spring and summer 2022 software engineering internships
+                                        Actively seeking entry-level&nbsp;
+                                        <typography.LinkBody
+                                            href={resume}
+                                            target="_blank"
+                                        >
+                                            software developer
+                                        </typography.LinkBody>
+                                        &nbsp;roles 👨🏻‍💻
                                     </typography.Body>
                                 </ListItem>
                                 <ListItem>
                                     <typography.Body>
-                                        researching&nbsp;
-                                        <typography.LinkBody 
-                                            href="https://github.com/chetbae/machine-learning" 
-                                            target='_blank' >
-                                            machine learning
+                                        Working on software and music technology
+                                        at&nbsp;
+                                        <typography.LinkBody
+                                            href="https://ddmal.music.mcgill.ca/"
+                                            target="_blank"
+                                        >
+                                            DDMAL Lab
                                         </typography.LinkBody>
-                                        &nbsp;and&nbsp;
-                                        <typography.LinkBody 
-                                            href="https://github.com/chetbae/programming-languages-and-paradigms" 
-                                            target='_blank' >
-                                            programming languages + paradigms
-                                        </typography.LinkBody>
-                                        &nbsp;at McGill University (Montreal, QC)
+                                        &nbsp;
                                     </typography.Body>
                                 </ListItem>
                                 <ListItem>
                                     <typography.Body>
-                                        obsessed with&nbsp;
-                                        <typography.LinkBody 
-                                            href="https://www.instagram.com/max.sends/" 
-                                            target='_blank' >
-                                            rock climbing! 🧗‍♂️
+                                        Developing full-stack applications for
+                                        VISIBLI
+                                    </typography.Body>
+                                </ListItem>
+                                <ListItem>
+                                    <typography.Body>
+                                        {isDark ? "Definitely" : "Probably"}
+                                        &nbsp;climbing&nbsp;
+                                        <typography.LinkBody
+                                            href="https://www.instagram.com/max.sends/"
+                                            target="_blank"
+                                        >
+                                            rocks
                                         </typography.LinkBody>
+                                        !🗿
                                     </typography.Body>
                                 </ListItem>
                             </ListContainer>
-
                         </containers.TopMedium>
 
                         <containers.TopSmall>
                             <typography.Heading>
-                                before, i was...
+                                previously...
                             </typography.Heading>
 
                             <ListContainer>
                                 <ListItem>
                                     <typography.Body>
-                                        studying music performance + computer science at McGill
+                                        McGill University '23: BA Computer
+                                        Science & BMus Jazz Performance
                                     </typography.Body>
                                 </ListItem>
                                 <ListItem>
                                     <typography.Body>
-                                        making&nbsp;
-                                        <typography.LinkBody 
-                                            href="https://github.com/chetbae" 
-                                            target='_blank'>
-                                            productivity apps
-                                        </typography.LinkBody>
-                                        &nbsp;for students at McHacks, HacktheNorth++ ...
-                                    </typography.Body>
-                                </ListItem>
-                                <ListItem>
-                                    <typography.Body>
-                                        performing&nbsp; 
-                                        <typography.LinkBody 
-                                            href="https://musicmaxzhang.wixsite.com/maxzhangmusic" 
-                                            target='_blank' >
-                                            JAZZ🎺
-                                        </typography.LinkBody> 
-                                        &nbsp;music in and around Montréal & Vancouver
+                                        Software developer intern at Government
+                                        of Canada (Ottawa, ON)
                                     </typography.Body>
                                 </ListItem>
                             </ListContainer>
                         </containers.TopSmall>
+                        <br />
+                        <br />
                     </BodyContainer>
-
                 </LandingContainer>
-            
             </containers.ContentContainer>
         </containers.PageContainer>
-    )
-}
+    );
+};
