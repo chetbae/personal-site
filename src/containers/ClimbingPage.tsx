@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { typography, containers } from "../styles";
 import { SideNav } from "../components/SideNav";
+import { useEffect } from "react";
 
 const StyledEmbed = styled.div`
     * > * {
@@ -10,6 +11,20 @@ const StyledEmbed = styled.div`
 `;
 
 export const ClimbingPage = () => {
+    useEffect(() => {
+        const script = document.createElement("script");
+
+        script.src = "https://www.instagram.com/embed.js";
+        script.type = "text/javascript";
+        script.async = true;
+
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
     return (
         <containers.PageContainer>
             <SideNav />
