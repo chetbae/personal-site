@@ -1,13 +1,13 @@
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom';
-import { device } from '../styles/device';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import { device } from "../styles/device";
 
-const extraLargeText = '3rem';
-const largeText = '2rem';
-const mediumText = '1rem';
-const bodyText = '0.9rem';
-const smallText = '0.75rem';
-const smallerText = '0.715rem';
+const extraLargeText = "3rem";
+const largeText = "2rem";
+const mediumText = "1rem";
+const bodyText = "0.9rem";
+const smallText = "0.75rem";
+const smallerText = "0.715rem";
 
 // large heading, e.g. 'Hello,'
 const LargeHeading = styled.p`
@@ -67,7 +67,7 @@ const SmallBody = styled.p`
     color: ${({ theme }) => theme.base};
 `;
 
-const activeClassName = 'nav-item-active'
+const activeClassName = "nav-item-active";
 
 const LinkHeading = styled(NavLink).attrs({ activeClassName })`
     font-size: ${smallText};
@@ -86,9 +86,8 @@ const LinkHeading = styled(NavLink).attrs({ activeClassName })`
 
     &.${activeClassName} {
         color: ${({ theme }) => theme.tertiary};
-        &:hover {
-            color: ${({ theme }) => theme.quaternary};
-        }
+        animation: none;
+        opacity: 1;
     }
 
     @media ${device.mobileM} {
