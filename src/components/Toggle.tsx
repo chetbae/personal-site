@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { device } from '../styles';
+import React from "react";
+import styled from "styled-components";
+import { device } from "../styles";
 
 const StyledButton = styled.button`
     background: none;
     border: none;
-    color: ${( props:any ) => props.theme.secondary};
+    color: ${(props: any) => props.theme.secondary};
     float: right;
     padding-right: 1rem;
     width: 7rem;
@@ -27,32 +27,32 @@ const ToggleText = styled.p`
     font-weight: 900;
     cursor: pointer;
     letter-spacing: 0.1rem;
-    background-color: ${( props:any ) => props.theme.primary};
-    color: ${( props:any ) => props.theme.background};
+    background-color: ${(props: any) => props.theme.primary};
+    color: ${(props: any) => props.theme.background};
 
     @media ${device.tablet} {
-        background-color: ${( props:any ) => props.theme.background};
-        color: ${( props:any ) => props.theme.primary};
+        background-color: ${(props: any) => props.theme.background};
+        color: ${(props: any) => props.theme.primary};
 
         &:hover {
-            color: ${( props:any ) => props.theme.background};
-            background-color: ${( props:any ) => props.theme.tertiary};
+            color: ${(props: any) => props.theme.background};
+            background-color: ${(props: any) => props.theme.tertiary};
         }
     }
 `;
 
 // type-ing for componenet
 interface IMyProps {
-    theme: boolean,
-    themeToggler: () => void,
+    theme: boolean;
+    themeToggler: () => void;
 }
 
 export const Toggle: React.FC<IMyProps> = (props: IMyProps) => {
     const { theme, themeToggler } = props;
 
-    return(
+    return (
         <StyledButton onClick={themeToggler}>
-            <ToggleText>{theme ? 'dark 🥂' : 'light ☕️'}</ToggleText>
+            <ToggleText>{theme ? "dark 🌙" : "light 🔥"}</ToggleText>
         </StyledButton>
-    )
-}
+    );
+};

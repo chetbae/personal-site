@@ -30,7 +30,7 @@ const LargeHeading1 = styled.p`
     font-weight: 900;
     word-wrap: normal;
     text-align: left;
-    color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.tertiary};
 `;
 
 // 'right now...', 'before, i was...'
