@@ -23,26 +23,23 @@ const LinkContainer = styled.nav`
 `;
 
 const ghostAnimation = keyframes`
-    50% { opacity: 0; }
-    52% { opacity: 0.2; }
-    54% { opacity: 0.4; }
-    56% { opacity: 0.6; }
-    58% { opacity: 0.8; }
-    60% { opacity: 1; }
+    40% { opacity: 0.1; }
+    41% { opacity: 0.2; }
+    42% { opacity: 0.4; }
+    43% { opacity: 0.6; }
+    44% { opacity: 0.8; }
+    45% { opacity: 1; }
     90% { opacity: 1; }
-    92% { opacity: 0.8} 
-    94% { opacity: 0.6; }
-    96% { opacity: 0.4; }
-    98% { opacity: 0.2; }
-    100% { opacity: 0; }
-
+    91% { opacity: 0.8} 
+    92% { opacity: 0.6; }
+    93% { opacity: 0.4; }
+    94% { opacity: 0.2; }
+    95% { opacity: 0.1; }
 `;
 
 const SneakyLink = styled(typography.LinkHeading)`
-    /* color: ${(props: any) => props.theme.background}; */
-    opacity: 0;
-    animation: ${ghostAnimation} 10s linear infinite;
-    animation-delay: 1s;
+    opacity: 0.1;
+    animation: ${ghostAnimation} 8s linear infinite;
 
     &:hover {
         opacity: 1;
